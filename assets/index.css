@@ -7,7 +7,6 @@
   /* Estilizando la barra de menú del header */
   .header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     background-color: #28282D;
     height: 100px;
