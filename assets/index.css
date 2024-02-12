@@ -39,11 +39,11 @@
     justify-content: space-between;
     align-items: center;
     list-style: none;
-    gap: 2rem;
+    gap: 4rem;
   }
   
   .nav_header ul {
-    padding-left: 20px;
+    padding-left: 4rem;
   }
   
   .nav_header ul li a,
