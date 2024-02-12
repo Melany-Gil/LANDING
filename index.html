@@ -11,48 +11,58 @@
 
 <body>
   <header class="header">
-    <nav class="nav_header">
-      <h1 class="logo">Logo</h1>
-      <ul>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#deportes">Deportes</a></li>
-        <li><a href="#noticias_principales">Noticias</a></li>
-        <li><a href="#tiendas_recomendadas">Tiendas Recomendadas</a></li>
-      </ul>
-      <ul>
-        <li><a href="../login/login.html" target="_blank">Iniciar sesión</a></li>
-        <li><a href="../registro/registro.html" target="_blank">Registrarse</a></li>
-      </ul>
-    </nav>
+    <h1 class="logo">Logo</h1>
+    <div>
+      <nav class="nav_header">
+        <ul id="nav_enlaces_internos">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#deportes">Deportes</a></li>
+          <li><a href="#noticias_principales">Noticias principales</a></li>
+          <li><a href="#tiendas_recomendadas">Tiendas Recomendadas</a></li>
+        </ul>
+      </nav>
+
+      <nav class="nav_header">
+        <ul id="nav_enlaces_externos">
+          <li><a href="../login/login.html" target="_blank">Iniciar sesión</a></li>
+          <li><a href="../registro/registro.html" target="_blank">Registrarse</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main id="main">
 
     <section id="busqueda">
-      <h3><b>¿Qué desea buscar?</b></h3>
-      <form action="#">
-        <label for="input-buscar"></label>
-        <input type="text" id="input-buscar" name="input-buscar" placeholder="Buscar">
-        <button type="submit">Buscar</button>
-      </form>
+      <article class="buscar_contenedor">
+        <h2><b>¿Qué desea buscar?</b></h2>
+        <form action="#">
+          <label for="input-buscar"></label>
+          <input type="text" id="input-buscar" name="input-buscar" placeholder="Buscar">
+          <button type="submit">Buscar</button>
+        </form>
+      </article>
     </section>
 
     <section name="deportes" id="deportes">
       <h2><b>Deportes</b></h2>
-      <article id="futbol">
-        <img src="../assets/logos/futbol.png" alt="Balón de Fútbol">
-        <h3>Fútbol</h3>
-      </article>
 
-      <article id="basquetbol">
-        <img src="../assets/logos/basketbol.png" alt="Balón de básquetbol">
-        <h3>Básquetbol</h3>
-      </article>
+      <div class="contenedor_deportes">
+        <article id="futbol">
+          <img src="../assets/logos/futbol.png" alt="Balón de Fútbol">
+          <h3>Fútbol</h3>
+        </article>
 
-      <article id="voleibol">
-        <img src="../assets/logos/voleibol.png" alt="Balón de vóleibol">
-        <h3>Vóleibol</h3>
-      </article>
+        <article id="basquetbol">
+          <img src="../assets/logos/basketbol.png" alt="Balón de básquetbol">
+          <h3>Básquetbol</h3>
+        </article>
+
+        <article id="voleibol">
+          <img src="../assets/logos/voleibol.png" alt="Balón de vóleibol">
+          <h3>Vóleibol</h3>
+        </article>
+      </div>
     </section>
 
     <section id="noticias_principales">
@@ -111,7 +121,7 @@
   </main>
 
   <footer id="footer">
-    <nav id="nav_footer">
+    <nav class="nav_footer">
       <ul>
         <li><a href="../nosotros/nosotros.html">Acerca de nosotros</a></li>
         <li><a href="../contacto/contacto.html">Contáctanos</a></li>
