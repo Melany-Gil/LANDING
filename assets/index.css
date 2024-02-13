@@ -204,10 +204,9 @@
 
 .contenedor_noticias {
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-wrap: wrap;
-  flex-direction: row;
+  flex-flow: wrap row;
+  justify-content: center;
+  margin-bottom: 185px;
 }
 
 #noticia1 img,
@@ -217,6 +216,7 @@
 #noticia5 img,
 #noticia6 img {
   height: 218px;
+  margin: 41px;
 }
 
 #noticia1 h5,
@@ -225,19 +225,17 @@
 #noticia4 h5,
 #noticia5 h5,
 #noticia6 h5 {
-  margin-block: 10px;
-}
-
-#noticia1,
-#noticia2,
-#noticia3,
-#noticia4,
-#noticia5,
-#noticia6 {
   display: flex;
-  align-items: center;
   flex-direction: column;
 }
 
+
 /* Se estiliza la sección de tiendas */
 
+#tiendas_recomendadas h2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 117px;
+  font-family: 'Roboto', sans-serif;
+}
