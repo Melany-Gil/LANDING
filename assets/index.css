@@ -116,7 +116,6 @@
 #deportes h2{
   display: flex;
   justify-content: center;
-  align-items: center;
   font-family: 'Roboto', sans-serif;
   margin-bottom: 61px;
 }
@@ -194,4 +193,51 @@
 }
 
 /* Estilizando la sección de Noticias principales*/
+
+#noticias_principales h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 117px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.contenedor_noticias {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+#noticia1 img,
+#noticia2 img,
+#noticia3 img,
+#noticia4 img,
+#noticia5 img,
+#noticia6 img {
+  height: 218px;
+}
+
+#noticia1 h5,
+#noticia2 h5,
+#noticia3 h5,
+#noticia4 h5,
+#noticia5 h5,
+#noticia6 h5 {
+  margin-block: 10px;
+}
+
+#noticia1,
+#noticia2,
+#noticia3,
+#noticia4,
+#noticia5,
+#noticia6 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Se estiliza la sección de tiendas */
 
