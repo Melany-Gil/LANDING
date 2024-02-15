@@ -33,8 +33,7 @@
   margin-left: 20px;
 }
   
-.nav_header ul,
-.nav_footer ul{
+.nav_header ul{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -46,8 +45,7 @@
   padding-left: 4rem;
 }
   
-.nav_header ul li a,
-.nav_footer ul li a {
+.nav_header ul li a {
   text-decoration: none;
   color: white;
   font-family: 'Ubuntu', sans-serif;
@@ -129,61 +127,41 @@
   
 #futbol {
   background: url(/assets/deportes_img/3,1.png);
-  background-size: cover;
-  background-position: right;
-  width: 285px;
-  height: 285px;
-  border-radius: 6px;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
 
-#futbol img {
-  width: 65px;
-  height: 65px;
-  margin: 10px;
-}
 
 #basquetbol {
   background-image: url(/assets/deportes_img/4,1.png);
-  background-size: cover;
-  width: 285px;
-  height: 285px;
-  color: white;
-  border-radius: 6px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
 }
 
-#basquetbol img {
-  width: 65px;
-  height: 65px;
-  margin: 10px;
-}
 
 #voleibol {
   background-image: url(/assets/deportes_img/1.png);
+}
+
+#futbol,
+#basquetbol,
+#voleibol {
   background-size: cover;
   width: 285px;
   height: 285px;
-  color: white;
   border-radius: 6px;
+  color: white;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
+  box-sizing: border-box;
 }
 
+#futbol img,
+#basquetbol img,
 #voleibol img {
   width: 65px;
   height: 65px;
   margin: 10px;
 }
+
 
 #futbol:hover,
 #basquetbol:hover,
@@ -205,30 +183,30 @@
 .contenedor_noticias {
   display: flex;
   flex-flow: wrap row;
-  justify-content: center;
+  justify-content: space-around;
   margin-bottom: 185px;
+  text-align: center;
 }
 
-#noticia1 img,
-#noticia2 img,
-#noticia3 img,
-#noticia4 img,
-#noticia5 img,
-#noticia6 img {
-  height: 218px;
-  margin: 41px;
+.contenedor_noticias img {
+  width: 345.78px;
+  height: auto;
 }
 
-#noticia1 h5,
-#noticia2 h5,
-#noticia3 h5,
-#noticia4 h5,
-#noticia5 h5,
-#noticia6 h5 {
-  display: flex;
-  flex-direction: column;
+.contenedor_noticias h5 {
+  margin: 15px;
 }
 
+#noticia1,
+#noticia2,
+#noticia3,
+#noticia4,
+#noticia5,
+#noticia6 {
+  border: 1px solid black;
+  margin-bottom: 50px;
+  margin-inline: 100px;
+}
 
 /* Se estiliza la sección de tiendas */
 
@@ -238,4 +216,54 @@
   align-items: center;
   margin-bottom: 117px;
   font-family: 'Roboto', sans-serif;
+}
+
+.contenedor_tiendas {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.contenedor_tiendas img {
+  width: 300px;
+  height: auto;
+}
+
+.contenedor_tiendas h5 {
+  margin: 15px;
+}
+
+#tienda1,
+#tienda2,
+#tienda3 {
+  border: 1px solid black;
+  margin-bottom: 50px;
+  margin-inline: 100px;
+}
+
+/* Estilizando el footer */
+
+#footer {
+  background-color: #28282D;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 4rem;
+  justify-content: space-around;
+}
+
+.nav_footer ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  gap: 4rem;
+}
+
+.nav_footer ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 15px;
 }
