@@ -30,7 +30,7 @@
   background-position: center;
   width: 52.5px;
   height: 50px;
-  margin-left: 20px;
+  margin-left: 100px;
 }
   
 .nav_header ul{
@@ -38,7 +38,13 @@
   justify-content: space-between;
   align-items: center;
   list-style: none;
-  gap: 4rem;
+  gap: 24px;
+}
+
+.nav_header li {
+  height: 24px;
+  width:max-content;
+
 }
   
 .nav_header ul {
@@ -51,10 +57,53 @@
   font-family: 'Ubuntu', sans-serif;
   font-size: 15px;
 }
-  
+
+
 .nav_header ul li a:hover,
 .nav_footer ul li a:hover {
   font-weight: bold;
+}
+
+#nav_enlaces_externos ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav_registro {
+  display: flex;
+  list-style: none;
+  border: 1px solid white;
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav_registro:first-child {
+  width: 174px;
+  height: 36px;
+  text-align: center;
+  margin-left: 150px;
+  margin-right: 18px;
+}
+
+.nav_registro:last-child {
+  width: 164px;
+  height: 36px;
+  text-align: center;
+}
+
+
+.nav_registro a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
+}
+
+.nav_registro:hover{
+  font-weight: bold;
+  border: 2px solid white;
 }
   
 /* Estilizando la sección de búsqueda */
@@ -107,6 +156,11 @@
   border-color: transparent;
   width: 130px;
   height: 40px;
+}
+
+.buscar_contenedor button:hover {
+  font-weight: bold;
+  background-color: #28292a;
 }
   
 /* Estilizando la sección de deportes*/
@@ -186,6 +240,7 @@
   justify-content: space-around;
   margin-bottom: 185px;
   text-align: center;
+  flex-wrap: wrap;
 }
 
 .contenedor_noticias img {
