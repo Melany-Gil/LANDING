@@ -61,7 +61,7 @@
 
 .nav_header ul li a:hover,
 .nav_footer ul li a:hover {
-  font-weight: bold;
+  color:beige;
 }
 
 #nav_enlaces_externos ul{
@@ -171,7 +171,7 @@
   font-family: 'Roboto', sans-serif;
   margin-bottom: 61px;
 }
-  
+
 .contenedor_deportes {
   display: flex;
   justify-content: space-around;
@@ -211,8 +211,6 @@
 #futbol img,
 #basquetbol img,
 #voleibol img {
-  width: 65px;
-  height: 65px;
   margin: 10px;
 }
 
@@ -220,8 +218,7 @@
 #futbol:hover,
 #basquetbol:hover,
 #voleibol:hover {
-  width: 287px;
-  height: 287px;
+  background-size: 300px;
 }
 
 /* Estilizando la sección de Noticias principales*/
@@ -261,6 +258,7 @@
   border: 1px solid black;
   margin-bottom: 50px;
   margin-inline: 100px;
+  flex-wrap: wrap row;
 }
 
 /* Se estiliza la sección de tiendas */
